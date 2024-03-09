@@ -7,7 +7,7 @@
             font-family: Arial, sans-serif;
         }
 
-        h2 {
+        h1 {
             font-family: Arial, sans-serif;
         }
 
@@ -53,15 +53,14 @@
 <body>
 
 <header class="page-header" role="banner">
+    <title>Prompting TTS Demo</title>
     <h1 class="project-name">Content Aware Text-to-Speech with Prompt-Based Prosody Control</h1>
-    <h2 class="project-tagline"></h2>
 </header>
 
 <main id="content" class="main-content" role="main">
-    
-    <h2 id="audio-samples">Audio Samples</h2>
-
         <!-- Explanation -->
+
+    <br><br>
     
         <h3><b>Baseline</b> - No text embeddings used</h3>
         <p>The baseline TTS system generates speech directly from the given text input, without any additional conditioning prompts. The only way the prosody could be influenced here is the text that is to be read itself. This approach serves as a foundation for comparison.</p>
@@ -69,7 +68,8 @@
         <h3><b>Proposed</b> - System conditioned on text embeddings</h3>
         <p>The proposed TTS system is conditioned on natural language prompts. The goal is to achieve more expressive and contextually appropriate speech output, if the text to be read is used as the prompt. Alternatively, a different text can be used as prompt to transfer the expected prosody of the prompt over to the text that is to be read.</p>
     
-    
+    <br><br>
+
     <!-- Table -->
     <h3>Using the Input Text as Prompt</h3>
     <table>
@@ -161,6 +161,8 @@
         </td>
         </tr>
     </table>
+
+    <br><br>
 
     <!-- Table -->
     <h3>Using a different Prompt</h3>
